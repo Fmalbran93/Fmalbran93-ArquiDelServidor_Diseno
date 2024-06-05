@@ -1,0 +1,38 @@
+<div class="container d-flex align-items-center justify-content-center mt-5 py-5">
+    <form action="/api/auth/signup" method="POST" class="w-50 border p-4 rounded">
+        <h3 class="mb-3">Registrarse</h3>
+        <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Ingrese su(s) nombre"
+                autocomplete="off" required>
+        </div>
+        <div class="mb-3">
+            <label for="surname" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="surname" name="surname" placeholder="Ingrese sus apellidos"
+                autocomplete="off" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Correo electronico</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese su correo electronico"
+                aria-describedby="emailHelp" autocomplete="off" required>
+        </div>
+        <div class="mb-3">
+            <label for="age" class="form-label">Edad</label>
+            <input type="number" class="form-control" id="age" name="age" placeholder="Ingrese su edad"
+                autocomplete="off" required>
+        </div>
+        <div class="mb-3">
+            <label for="roles" class="form-label">Roles</label>
+            <input type="text" class="form-control" id="roles" name="roles" placeholder="Ingrese administrador o usuario"
+                autocomplete="off" required>
+        </div>
+       
+        <div class="mb-3">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" name="password" placeholder="Ingrese su contraseña"
+                autocomplete="off" id="password" required>
+        </div>
+        <button type="submit" class="btn btn-success">Registrarse</button>
+        <a href="/login" class="btn btn-success">Iniciar secion</a>
+    </form>
+</div>

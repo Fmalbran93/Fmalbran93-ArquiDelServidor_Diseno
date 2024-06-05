@@ -1,0 +1,44 @@
+ {{> nav}}
+<div id="chat-container" class="chat_content">
+  <div id="chat-header">
+    <div class="d-grid">
+    <h4 class="text-warning">Chat de ventas</h4>
+    <!--Recibe el nombre de usuario desde el input de la alerta-->
+    <h6 id="nombreusuario" class="text-secondary-subtle">Usuario</h6>
+    <h6 class="online fw-semibold text-center">(Online)</h6>
+    </div>
+    <img
+      src="#"
+      alt="Avatar usuario"
+      id="customer-service-logo"
+      class="me-5"
+    />
+  </div>
+  <div id="chat-messages">
+    <div class="message sender">
+      <div class="user-info">
+        <div class="sender-name">Conectado</div>
+      </div>
+      <!--Recibe el mensaje enviado-->
+      <div id="chat">...</div>
+    </div>
+  </div>
+  <form id="formulario">
+    <input
+      type="text"
+      name="mensaje"
+      id="mensaje"
+      placeholder="Escribe algo..."
+    />
+    <!--Se envia el mensaje-->
+    <button id="sendMessage" class="btn btn-success"><i class="bi bi-send"></i></button>
+  </form>
+</div>
+
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/toastify-js"
+></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/chat.js"></script>

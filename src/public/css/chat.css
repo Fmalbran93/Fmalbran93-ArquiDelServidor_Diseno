@@ -1,0 +1,100 @@
+.nav-bg {
+    background-color: #181833;
+  }
+  .nav-bg .img__nav {
+    width: 200px;
+    height: 60px;
+    border-radius: 15px;
+  }
+  
+  #chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(150, 150, 150, 0.1);
+  }
+  #chat-container #chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #181833;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  #chat-container #nombreusuario {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  #chat-container #customer-service-logo {
+    max-width: 50px;
+    margin-left: 20px;
+    border-radius: 100%;
+  }
+  
+  #chat-messages {
+    max-height: 400px;
+    overflow-y: scroll;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  #chat-messages .message {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 70%;
+    background-color: #dfdfdf;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  #chat-messages .message .sender-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  #formulario {
+    display: flex;
+    align-items: center;
+    background-color: #181833;
+    border: 1px solid #241515;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  #formulario #mensaje {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s;
+    background: rgb(128, 128, 128);
+    color: #181833;
+  }
+  .card .card-header {
+    background-color: #181833;
+    border: 1px solid #fff;
+  }
+  .card ul {
+    list-style: none;
+  }
+  
+  .buttons {
+    border: 1px solid #fff;
+    background: #181833;
+  }
+  
+  .form__content {
+    background: #181833;
+    border-radius: 15px;
+    border: 1px solid #fff;
+  }

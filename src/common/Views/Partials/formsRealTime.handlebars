@@ -1,0 +1,70 @@
+<form class="container mt-5" id="formProduct">
+    <h3 class="text-warning text-upercase">Crear Producto</h3>
+  <div class="form__content row g-4 mx-4 px-4 py-5">
+    <div class="col-md-6 mt-5">
+      <label for="title" class="form-label text-light">Nombre del Producto</label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="bi bi-box"></i></span>
+        <input class="form-control" type="text" name="title" id="title" placeholder="Nombre del producto" required />
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="description" class="form-label text-light">Descripción</label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="bi bi-file-text"></i></span>
+        <input class="form-control" type="text" name="description" id="description"
+          placeholder="Descripción del producto" required />
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="stock" class="form-label text-light">Unidades disponibles</label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="bi bi-box"></i></span>
+        <input class="form-control" type="number" name="stock" id="stock" placeholder="Unidades del producto"
+          required />
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="thumbnail" class="form-label text-light">Imagen del producto</label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="bi bi-image"></i></span>
+        <input class="form-control" type="text" name="thumbnail" id="thumbnail"
+          placeholder="Link de la imagen del producto" required />
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="category" class="form-label text-light">Categoría</label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="bi bi-grid"></i></span>
+        <input class="form-control" type="text" name="category" id="category" placeholder="categoria del producto"
+          required />
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="price" class="form-label text-light">Precio</label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="bi bi-currency-dollar"></i></span>
+        <input class="form-control" type="number" name="price" id="price" placeholder="Predio del producto" required />
+      </div>
+    </div>
+    
+    <div class="col-md-6">
+      <label for="code" class="form-label text-light">Código</label>
+      <div class="input-group">
+        <span class="input-group-text"><i class="bi bi-tag"></i></span>
+        <input class="form-control" type="text" name="code" id="code" placeholder="Codigo del producto" required />
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-check mt-4">
+        <input name="status" class="form-check-input" type="checkbox" value="true" id="flexCheckChecked" checked />
+        <label class="form-check-label text-light" for="flexCheckChecked">Estado</label>
+      </div>
+    </div>
+    <div class="col-12 mt-4">
+      <button class="btn btn-success" type="submit" id="add-btn">Crear producto
+      </button>
+    </div>
+  </div>
+  </div>
+</form>

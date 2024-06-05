@@ -1,0 +1,102 @@
+
+<div class="nav-b">
+  <nav class="navbar container navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand text-light ms-5" href="/"><img
+          class="img__nav"
+          src="img/logo.png"
+          alt="logo navBar"
+        /></a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+          <li class="nav-item">
+            <a
+              class="nav-link text-warning fw-bold fs-5 active"
+              aria-current="page"
+              href="/home"
+            >Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-warning fw-bold fs-5 active"
+              aria-current="page"
+              href="/"
+            >Productos</a>
+          </li>
+        </ul>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <a
+        type="button"
+        class="px-2 py-1 me-4 text-warning btn_cart"
+        data-bs-toggle="modal"
+        data-bs-target="#modalCart"
+      >
+        <i class="bi bi-cart-check-fill fs-5"></i>
+      </a>
+      <a
+        href="/carts"
+        class="px-2 py-1 me-4 text-warning btn_cart"
+        type="submit"
+      ><i class="bi bi-collection fs-5"></i></a>
+      <a
+        href="/chat"
+        class="px-2 py-1 me-4 text-warning btn_cart"
+        type="submit"
+      ><i class="bi bi-chat-dots fs-5"></i></a>
+      <a
+        href="/realtimeproducts"
+        class="px-2 py-1 me-4 text-warning btn_cart"
+        type="submit"
+      ><i class="bi bi-gear fs-5"></i></a>
+      <!--Modal-->
+      <div
+        class="modal fade"
+        id="modalCart"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg__modal-header">
+              <h1
+                class="modal-title fs-4 text-warning"
+                id="exampleModalLabel"
+              >Carrito de compras</h1>
+              <button
+                type="button"
+                class="btn-close btn bg-light"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body bg-secondary-subtle mb-2" id="modalBody">
+              <!--Recibe los productos que se agregan-->
+            </div>
+            <div class="modal-footer bg__modal-header">
+              <!--Boton para crear carrito-->
+              <button type="button" class="btn btn-success" id="cartFinal">Crear
+                Carrito</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>

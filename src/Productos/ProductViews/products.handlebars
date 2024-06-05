@@ -1,0 +1,63 @@
+ {{> nav}}
+<div class="container mx-auto">
+  <div class="container mt-3">
+    <div class="mb-3">
+    {{> navCategories}}
+    {{> filters}}
+    </div>
+    
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+      <!--Renderiza los productos http://localhost:8080-->
+      {{#each products}}
+        <div class="col mb-4">
+          <div class="card h-100">
+            <div class="card-header text-warning">
+              <i class="bi bi-tag"></i>
+              Codigo del:
+              {{this.code}}
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mb-4">
+                <li>
+                  <img
+                    src="{{this.thumbnail}}"
+                    alt="{{this.title}}"
+                    class="img-fluid mt-2"
+                  />
+                </li>
+                <li class="mt-3"><h5 class="card-title text-warning text-center">{{this.title}}</h5></li>
+                <li class="fs-4 text-center mt-5 mb-3"><span class="text-warning">Unidades desponibles:</span> {{this.stock}}</li>
+                <li class="text-center fs-4"><span class="text-warning">Precio: $</span>{{this.price}}</li>
+              </ul>
+              <div class="text-center d-flex align-items-center justify-content-around gap-3 mt-3">
+                <a
+                  class="btn btn-success text-lg"
+                  id="{{this._id}}"
+                  href="/product/{{this._id}}"
+                >Detalle Del Producto</a>
+                <a
+                  class="btn btn-success text-lg product"
+                  id="{{this._id}}"
+                  data-value="{{this.stock}}"
+                >Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+     <!--Paginacion-->
+    <div
+      class="container d-flex justify-content-center align-items-center gap-4 p-4"
+    >
+      {{#if hasPrevPage}}
+        <a class="p-2 text-decoration-none fs-3 text-warning" href="{{prevLink}}"><<<</a>
+      {{/if}}
+      {{#if hasNextPage}}
+        <h3 class="text-success">{{page}}/{{totalPages}}</h3>
+        <a class="p-2 text-decoration-none fs-3 text-warning" href="{{nextLink}}">>>></a>
+      {{/if}}
+    </div>
+  </div>
+</div>
+<script src="js/sendCart.js"></script>

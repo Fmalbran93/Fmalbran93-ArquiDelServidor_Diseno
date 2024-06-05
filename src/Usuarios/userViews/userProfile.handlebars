@@ -1,0 +1,11 @@
+{{> nav}}
+
+<div> 
+  <h1>Perfil de usuario</h1>
+  <p>Bienvenido, {{user.name}} {{user.surname}}</p>
+  <p>Email: {{user.email}}</p>
+  <p>Edad: {{user.age}}</p>
+  <p>Rol: {{#each user.roles}} {{this}} {{/each}}</p>
+
+  <a href="/api/session/logout">Cerrar sesión</a> 
+</div>

@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label,
+input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: rgb(184, 125, 192);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.no-products {
+    color: red;
+    font-weight: bold;
+  }
+
+  body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 0;
+	
+  }
+  
+  .product-container {
+	width: 300px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin: 50px auto;
+  }
+  
+  .product-container p {
+	margin: 5px 0;
+	font-size: 14px;
+	color: #333;
+  }
+  
+  .product-container p:first-child {
+	font-weight: bold;
+	font-size: 16px;
+  }
+  
+  .product-container p:nth-child(even) {
+	background-color: #f4f4f4;
+  }
+  
+  .product-container p:last-child {
+	color: #e74c3c;
+  }
+h3{
+	color: #e74c3c
+}
+
+button {
+    background-color: rgb(184, 125, 192);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}

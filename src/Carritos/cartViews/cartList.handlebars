@@ -1,0 +1,29 @@
+<div class="container mt-5">
+  <h1 class="mb-4 text-warning">Lista de Carritos</h1>
+  <a
+        href="/"
+        class="btn btn-success mt-3 pt-3 pb-3 pr-4 pl-4"
+      >Regresar a la tienda</a>
+  <div class="row">
+    {{#each carts}}
+      <div class="col-md-6">
+        <div class="card mb-3">
+          <div class="card-header">
+            <h5 class="card-title">Carrito {{ _id }}</h5>
+          </div>
+          <div class="card-body">
+            <ul class="list-group list-group-flush">
+              {{#each products}}
+                <li class="list-group-item">
+                  <span class="fw-bold">Producto:</span> {{ this._id.title }} <br>
+                  <span class="fw-bold">Cantidad:</span> {{ quantity }} <br>
+                  <span class="fw-bold">Precio:</span> {{ this._id.price }} <br>
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
